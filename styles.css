@@ -1,0 +1,599 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+*{
+    border-radius: 1px solid red;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: 'commissioner';
+    src: url('fonts/Commissioner-VariableFont_wght.ttf');
+}
+
+body {
+    position: relative;
+    font-family: 'commissioner';
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-cyan {
+    background: hsl(176, 50%, 47%);
+}
+
+.bg-grey {
+    background: hsl(0, 0%, 48%);
+}
+
+
+
+.hide {
+    display: none;
+}
+
+/*dark bg for active modal*/
+.dark-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: hsla(0, 1%, 15%, 0.219);
+    display: none;
+}
+
+.dark-bg.active {
+    display: block;
+}
+
+/*navbar*/
+.navbar {
+    z-index: 4;
+    padding: 1rem 4rem;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0rem 1rem;
+  
+}
+
+/*bg-image*/
+
+.top-image {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 50vh;
+    background: url('images/image-hero-desktop.jpg') top no-repeat;
+    background-size: 100%;
+}
+
+/*main-container*/
+
+main.container-fluid {
+    display: grid;
+    place-items: center center;
+}
+
+main.container-fluid>div {
+    width: 55%;
+    z-index: 3;
+    margin-top: 30vh;
+}
+
+main.container-fluid section {
+    margin-bottom: 1.5rem;
+    background: white;
+    box-shadow: 0px 0px 20px -7px rgba(97, 96, 96, 0.322);
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+main.container-fluid {
+    background: hsl(0, 0%, 99%);
+    position: relative;
+
+}
+
+/*header*/
+
+.header {
+    position: relative;
+}
+
+.header header h2 {
+    font-size: 1.8rem;
+}
+
+.header h5 {
+    font-size: 1rem;
+    color: rgb(84, 85, 85);
+}
+
+.header .cta {
+
+    padding: 0rem .5rem;
+}
+
+.header .cta .btn {
+    background: hsl(176, 50%, 47%);
+    border-radius: 4rem;
+    padding: .5rem 1.5rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+.header .cta>.bookmark-toggle {
+    position: relative;
+    border-radius: 4rem;
+    padding: .5rem 2rem .5rem 5rem;
+    display: grid;
+    background: hsl(0, 0%, 91%);
+    place-items: center center;
+    color: black;
+    font-weight: 500;
+}
+
+.header .cta>.bookmark-toggle.active {
+    color: hsl(176, 50%, 47%);
+}
+
+.header .cta>.bookmark-toggle>svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.header .cta .bookmark-toggle svg circle.active {
+    fill: hsl(176, 50%, 47%);
+}
+
+.header .cta .bookmark-toggle svg path.active {
+    fill: hsl(0, 0%, 99%);
+}
+
+.header header {
+    margin: 2.3rem 0rem
+}
+
+.header .logo {
+    position: absolute;
+    top: -1.5rem;
+    right: 50%;
+}
+
+/*stats*/
+
+section.stats .container-fluid {
+    display: flex;
+
+}
+
+section.stats .container-fluid div {
+    padding-right: 3rem;
+    border-right: 1px solid rgb(100, 100, 100);
+}
+
+section.stats .container-fluid div:not(:first-child) {
+    padding-left: 2rem;
+}
+
+section.stats .container-fluid div .value {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+section.stats .progress-bar {
+    width: 100%;
+    margin: 2rem 0rem;
+    height: .8rem;
+    background: none;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px rgba(156, 155, 155, 0.377);
+}
+
+section.stats .progress-bar .value {
+    height: 100%;
+    width: 70%;
+    background: hsl(176, 50%, 47%);
+    border-radius: 2rem;
+
+}
+
+/*about*/
+
+main.container-fluid .about {
+    padding: 1rem 2.5rem;
+}
+
+.about h5 {
+    font-weight: bold;
+}
+
+.about > p {
+    margin: 1.5rem 0rem;
+    color: hsl(0, 0%, 48%);
+}
+
+/*cards*/
+.card {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.card-body {
+    color: hsl(0, 0%, 48%);
+}
+
+.card:last-child {
+    color: hsl(0, 0%, 48%);
+}
+
+.card-footer {
+    background: white;
+    border: none;
+}
+
+.card .card-top {
+    align-items: center;
+    padding: 1rem 1rem 0rem 1rem;
+
+}
+
+.card .card-top p {
+    color: hsl(176, 50%, 47%);
+    font-weight: 600;
+}
+
+.card .card-footer .btn {
+    float: right;
+    color: white;
+    border-radius: 4rem;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+}
+
+.card .card-footer .stock-value {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: .2rem;
+}
+
+/*selection modal*/
+
+.selection-modal {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translatey(-800px);
+    opacity: 0;
+    z-index: 6;
+    width: 40%;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    background: hsl(0, 0%, 99%);
+    box-shadow: 0px 0px 10px hsla(0, 0%, 48%, 0.342);
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+}
+
+.selection-modal.active {
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+
+.selection-modal .container-fluid {
+    position: relative;
+
+}
+
+.selection-modal .close {
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    cursor: pointer;
+}
+
+.selection-modal .close path:hover {
+    fill: rgb(17, 17, 17);
+}
+
+.selection-modal h4 {
+    font-size: 1rem;
+}
+
+.selection-modal .card-top>h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.selection-modal>p {
+    color: hsl(0, 0%, 48%);
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.selection-modal .card-top,
+.selection-modal .card-body {
+    margin-left: 2rem;
+}
+
+.selection-modal .card .card-body {
+    font-size: .9rem;
+    padding-right: 1rem;
+}
+
+.selection-modal .card.active {
+    border: 1.5px solid hsl(176, 50%, 47%);
+}
+
+/*radio selection*/
+
+.selection-modal .select {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3rem;
+    left: .9rem;
+    top: 1.3rem;
+    cursor: pointer;
+    border: 2px solid rgb(119, 118, 118);
+    border-radius: 4rem;
+}
+
+.selection-modal .select.active::before {
+    content: ' ';
+    width: 1rem;
+    height: 1rem;
+    background: hsl(176, 50%, 47%);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+}
+.selection-modal .card .card-footer {
+    padding-top: 1rem;
+    border-top: 1px solid hsla(0, 0%, 48%, 0.527);
+}
+
+.selection-modal .card .card-footer .cta input[type='number'] {
+    width: 3rem;
+    border-radius: 5rem;
+    border: 1px solid hsl(0, 0%, 48%);
+}
+
+.card .card-footer .cta input[type='number']:focus {
+    outline: none;
+    border: 1.5px solid hsl(176, 76%, 42%);
+}
+
+.selection-modal .cta div {
+    margin-right: .5rem;
+}
+
+.selection-modal .cta {
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 48%);
+}
+
+.selection-modal .card .card-footer .btn {
+    float: none;
+    padding: .3rem 1.4rem;
+
+}
+
+.selection-modal .card-footer p {
+    color: hsl(0, 0%, 48%);
+}
+
+/*success modal*/
+
+.success-modal {
+    z-index: 20;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    box-shadow: 0px 5px 20px rgba(136, 134, 134, 0.384);
+}
+
+.success-modal p {
+    color: hsl(0, 1%, 46%);
+}
+
+.success-modal h5 {
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+}
+
+.success-modal.hide {
+    display: none;
+}
+
+.success-modal .container-fluid {
+    text-align: center;
+}
+
+.success-modal .container-fluid .btn {
+    font-size: 1.2rem;
+    background: hsl(176, 76%, 42%);
+    padding: .5rem 2rem;
+    color: hsl(0, 0%, 99%);
+    margin: 1rem 0rem;
+}
+
+/*mobile version*/
+
+@media(max-width:375px){
+    .top-image {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        height: 50vh;
+        background: url('images/image-hero-mobile.jpg') top no-repeat;
+        background-size: 100%;
+    }
+    .navbar {
+        z-index: 4;
+        padding: 1rem .5rem;
+        position: absolute;
+        width: 100%;
+    }   
+    
+    .header header h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .header h5 {
+        font-size: .8rem;
+        color: rgb(84, 85, 85);
+    }
+    .header .logo{
+        top: -2rem;
+        left: 50%;
+        margin-right: -50px;
+        margin-left: -50px;
+    }
+    .selection-modal{
+     width: 95%;
+     transform: translateY(-1500px);
+     padding: .5rem;
+    }.selection-modal .card h5{
+        font-size: 1rem;
+    }
+    .selection-modal .card-body{
+        font-size: .6rem;
+    }
+    .selection-modal .container-fluid > p{
+        font-size: .8rem;
+    }
+    .selection-modal .card .card-footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .selection-modal .card .card-body,.selection-modal .card .card-top{
+        padding-right: .5rem;
+    }
+    {
+
+    }
+    .selection-modal .select{
+     width: 1.2rem;
+     height: 1.2rem;
+    }
+    .selection-modal  .select.active::before{
+        width: .7rem;
+        height: .7rem;
+    }
+    .success-modal{
+        width: 90%;
+        font-size: .9rem;
+    }
+    main.container-fluid>div {
+        width: 100%;
+        z-index: 3;
+        margin-top: 40vh;
+    }
+    main.container-fluid .about {
+        padding: 1rem; 
+    }   
+    .header .cta{
+        justify-content: normal;
+    }
+   .header .cta .btn {
+        background: hsl(176, 50%, 47%);
+        padding: .5rem 4rem;
+        border-radius: 2rem;
+        color: white;
+    }
+    .header{
+        padding: .5rem;
+    }
+     .header .cta>.bookmark-toggle span{
+        display: none;
+    }
+    .header .cta>.bookmark-toggle{
+        padding: 0;
+        margin: 0rem .5rem;
+        
+    } 
+    .header .cta>.bookmark-toggle>svg {
+        top: -.5rem;
+    }
+    section.stats .container-fluid div .value {
+        font-size: 1.4rem;
+        font-weight: bold;
+        
+    }
+    section.stats .container-fluid{
+        display: flex;
+        flex-wrap: wrap;
+         
+    }
+    section.stats .container-fluid div{
+        padding: .2rem;
+        font-size: .9rem;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+        margin: .3rem 0rem;
+    }
+    section.stats .container-fluid div:not(:first-child){
+        padding-left:.5rem ;
+    }
+    section.about{
+     font-size: .9rem;
+    }
+    
+    .card .card-top{
+        flex-wrap: wrap;
+        justify-content: normal;
+    }
+    .card h5{
+        font-size: 1.1rem;
+       width: 100%;
+    }
+    .card-body{
+        padding-top: 0rem;
+    }
+    .card p{
+        font-size: .9rem;
+    }
+    .card .card-footer .btn{
+        float: none;
+        display: block;
+        margin-top: .5rem;
+        
+    }
+
+}
